@@ -1,0 +1,13 @@
+# Create auction
+POST http://localhost:8080/auction
+Content-Type: application/json
+
+{
+  "product_name": "Macbook Pro 2",
+  "category": "laptops",
+  "description": "Brand new Macbook Pro 16 inch with M1 chip year 2020 16GB",
+  "condition": 1
+}
+
+###
+GET http://localhost:8080/auction?category=laptops&status=0
